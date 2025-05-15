@@ -1,0 +1,20 @@
+Plan for Portfolio Website
+
+Home Page
+    This should have my name and a single sentence to drive impact, some graphic to fill in the space as well
+
+About Me
+    This should be on the home page and be scrolled down to or linked to scroll down
+    At the bottom of the page, invite to projects and contact
+
+Projects 
+    Display projects in card format
+        Each of the cards will have an image associated with the project, and short description
+        Clicking on the cards will link to the page associated with that project
+    Sort the projects in different ways, via a dropdown menu (language, recency, purpose)
+
+Resume
+    Just display the resume
+
+Contact Me
+    Look into making an actual form which can be used to contact and just show everything in general
