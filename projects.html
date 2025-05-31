@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-US" data-bs-theme="dark">
+<html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Tai William's Online Portfolio </title>
 
         <!-- Boot Strap StyleSheet -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link href="custom.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <nav class="navbar navbar-expand-lg sticky-top bg-body" >
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><div class="fw-italic fw-bold">Tai Williams</div></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,82 +20,135 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Projects
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="projects.html">View All</a></li>
-                            </ul>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pdfs/Tai_Williams_RSM.pdf">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="https://github.com/TWilliamsA7">
+                                <img src="images/githublogo.jpg" alt="GitHub Logo" width="30" height="30">
+                            </a>
                         </li>
                         <!-- Possibly Add Socials Directly on NavBar -->
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <h1 class=" p-3"> Projects </h1>
-
-        <div class="container">
+        
+        <h1 class="fw-bold p-3"> Projects </h1> <hr>
+        
+        <div class="container text-center">
             <div class="row justify-content-evenly">
-
-
-                <div class="card  border border-primary border-3" style="width: 18rem;">
-                    <img src="images/ChessProj.jpg" class="card-img-top p-2" alt="ChessBoard">
+                
+                <div class="card border border-primary border-3 bg-light mb-2" style="width: 18rem;">
+                    <img src="images/financetracker.jpg" class="card-img-top p-2 m-1 border border-2 border-dark" alt="Chip 8 Logo">
                     <div class="card-body">
-                        <h5 class="card-title">Chess</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Java</h6>
-                        <p class="card-text"> Java Implementation of Chess as a form of project-based learning and just for fun! </p>
-                        <a href="#" class="btn btn-primary">Check It Out!</a>
+                        <h5 class="card-title">Finance Tracker</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary"> Python | Django | HTML </h6>
+                        <p class="card-text"> Finance management web application using Django framework and a relational database </p>
+
+                        <form action="https://github.com/TWilliamsA7/FinanceTracker">
+                            <button class="btn btn-primary">Check It Out!</button>
+                        </form>
+
                     </div>
                 </div>
-
-                <div class="card border border-primary border-3" style="width: 18rem;">
-                    <img src="images/Java3DRenderer.jpg" class="card-img-top p-2" alt="Rendered Sphere">
+                
+                <div class="card border border-primary border-3 bg-light mb-2" style="width: 18rem;">
+                    <img src="images/Chip8.jpg" class="card-img-top p-2 m-1 border border-2 border-dark" alt="Chip 8 Logo">
                     <div class="card-body">
-                        <h5 class="card-title">Simple 3D Renderer</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Java</h6>
-                        <p class="card-text"> 3D Renderer Application using matrix and vector manipulation. </p>
-                        <a href="#" class="btn btn-primary">Check It Out!</a>
+                        <h5 class="card-title">Chip8 Emulator</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">C</h6>
+                        <p class="card-text"> Implemented an emulator of the Chip8 virtual machine using SDL2 for graphics </p>
+                        <!-- <form action="#">
+                            <button class="btn btn-primary">Check It Out!</button>
+                        </form> -->
                     </div>
                 </div>
-
-                <div class="card border border-primary border-3" style="width: 18rem;">
-                    <img src="images/ECDC.jpg" class="card-img-top p-2" alt="Digital Circuit TestBench">
+                
+                
+                <div class="card border border-primary border-3 bg-light mb-2" style="width: 18rem;">
+                    <img src="images/ECDC.jpg" class="card-img-top p-2 m-1 border border-2 border-dark" alt="Digital Circuit TestBench">
                     <div class="card-body">
                         <h5 class="card-title">Digital Circuit Error Correction</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Verilog</h6>
                         <p class="card-text"> Implemented and Analyzed various error Correction methodologies. </p>
-                        <a href="#" class="btn btn-primary">Check It Out!</a>
+                        <!-- <form action="#">
+                            <button class="btn btn-primary">Check It Out!</button>
+                        </form> -->
                     </div>
                 </div>
             </div>
             
-            <hr>
-
             <div class="row justify-content-evenly">
-                <div class="card border border-primary border-3" style="width: 18rem;">
-                    <img src="images/Chip8.jpg" class="card-img-top p-2" alt="Chip 8 Logo">
+                
+                
+                
+                <div class="card border border-primary border-3 bg-light mb-2" style="width: 18rem;">
+                    <img src="images/GNORBoat.jpg" class="card-img-top p-2 m-1 border border-2 border-dark" alt="Chip 8 Logo">
                     <div class="card-body">
-                        <h5 class="card-title">Chip8 Emulator</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">C</h6>
-                        <p class="card-text"> Implemented a emulator of the Chip8 virtual machine using SDL2 for graphics </p>
-                        <a href="#" class="btn btn-primary">Check It Out!</a>
+                        <h5 class="card-title">GNOR Boat</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary"> Arduino | Electronics </h6>
+                        <p class="card-text"> Autonomous boat driven by an Arduino Nano </p>
+                        <!-- <form action="#">
+                            <button class="btn btn-primary">Check It Out!</button>
+                        </form> -->
+                    </div>
+                </div>
+                <div class="card  border border-primary border-3 bg-light mb-2" style="width: 18rem;">
+                    <img src="images/ChessProj.jpg" class="card-img-top p-2 m-1 border border-2 border-dark" alt="ChessBoard">
+                    <div class="card-body">
+                        <h5 class="card-title">Chess</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Java</h6>
+                        <p class="card-text"> Java Implementation of Chess as a form of project-based learning and just for fun! </p>
+                        <form action="https://github.com/TWilliamsA7/Chess">
+                            <button class="btn btn-primary">Check It Out!</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card border border-primary border-3 bg-light mb-2" style="width: 18rem;">
+                    <img src="images/breadboard.jpg" class="card-img-top p-2 m-1 border border-2 border-dark" alt="Chip 8 Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Breadboard Experiments</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary"> Electronics | Arduino </h6>
+                        <p class="card-text"> Collection of circuits and systems created on breadboards </p>
+                        <!-- <form action="#">
+                            <button class="btn btn-primary">Check It Out!</button>
+                        </form> -->
                     </div>
                 </div>
             </div>
+            
+            <div class="row justify-content-evenly">
+                
+
+                <div class="card border border-primary border-3 bg-light mb-2" style="width: 18rem;">
+                    <img src="images/Java3DRenderer.jpg" class="card-img-top p-2 m-1 border border-2 border-dark" alt="Rendered Sphere">
+                    <div class="card-body">
+                        <h5 class="card-title">Simple 3D Renderer</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Java</h6>
+                        <p class="card-text"> 3D Renderer Application using matrix and vector manipulation. </p>
+                        <!-- <form action="#">
+                            <button class="btn btn-primary">Check It Out!</button>
+                        </form> -->
+                    </div>
+                </div>
+                <div class="card border border-primary border-3 bg-light mb-2" style="width: 18rem;">
+                    <img src="images/taskcatalogue.jpg" class="card-img-top p-2 m-1 border border-2 border-dark" alt="Chip 8 Logo" height="50%">
+                    <div class="card-body">
+                        <h5 class="card-title"> Task Management App </h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Python</h6>
+                        <p class="card-text"> Log and remove various tasks through Tkinter UI and file I/O </p>
+                        <!-- <form action="#">
+                            <button class="btn btn-primary">Check It Out!</button>
+                        </form> -->
+                    </div>
+                </div>
+                
+            </div>
+
         </div>
-
-
+        
+        
         <!-- Bootstrap Script -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     </body>
